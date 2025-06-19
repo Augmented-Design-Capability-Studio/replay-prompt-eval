@@ -1,0 +1,25 @@
+{
+  "interactions": [],
+  "messages": [
+    {
+      "uuid": "5636d89e-bdf0-4998-8bea-ec2614f6ec08",
+      "message": "How could considering frictional forces at the connections enhance the accuracy of your free body diagram and subsequent design considerations?",
+      "sessionID": "P16_DesignSession",
+      "rating": 3,
+      "comment": "gera",
+      "timestamp": 1537,
+      "id": 1
+    },
+    {
+      "uuid": "01158508-0b40-4d8f-a567-668a04e8616d",
+      "message": "Have you considered how you will validate the performance of your design after integrating all the materials and constraints? What methods might you use to test or simulate its efficacy and safety in a real-world scenario?",
+      "sessionID": "P01_DesignSession",
+      "rating": 3,
+      "comment": "yes!!!!",
+      "timestamp": 1687,
+      "id": 2
+    }
+  ],
+  "screenshots": [],
+  "transcripts": []
+}

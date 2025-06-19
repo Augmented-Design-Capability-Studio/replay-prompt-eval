@@ -1,0 +1,7 @@
+/media/*
+!/media/.gitkeep
+
+.env
+
+# Ignore all node_modules directories
+node_modules/
