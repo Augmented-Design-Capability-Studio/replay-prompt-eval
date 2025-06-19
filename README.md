@@ -18,14 +18,14 @@ woz-frontend/    # React + Vite frontend (WoZ interface)
 
 ## 1. Backend Server (Express.js)
 
-- **Setup:**
+**Setup:**
   1. Copy `.env.template` to `.env` and fill in your `OPENAI_API_KEY` and other secrets.
   2. Install dependencies:
      ```sh
      cd backend
      npm install
      ```
-- **Start:**
+**Start:**
   ```sh
   node server.js
   # or for development with auto-reload:
@@ -36,10 +36,10 @@ woz-frontend/    # React + Vite frontend (WoZ interface)
 
 ## 2. DB Server (json-server)
 
-- **Setup:**
+**Setup:**
   1. Copy `db_template.json` to `db.json` in the backend folder.
   2. Set `DB_FILE=db.json` in your `.env`.
-- **Start:**
+**Start:**
   ```sh
   node db-server.js
   ```
@@ -48,22 +48,22 @@ woz-frontend/    # React + Vite frontend (WoZ interface)
 
 ## 3. WoZ Frontend (React App)
 
-- **Setup:**
+**Setup:**
   ```sh
   cd woz-frontend
   npm install
   ```
-- **Start:**
+**Start:**
   ```sh
   npm run dev
   ```
-  - The app will be available at [http://localhost:5173/woz/](http://localhost:5173/woz/)
+The app will be available at [http://localhost:5173/woz/](http://localhost:5173/woz/)
 
 ---
 
 ## General Workflow
 
-1. *Preparing videos and transcripts:* For each video file, create a transcript with the same filename and save as `.srt` (e.g., using Mac Whisper) in `backend/media/`.
+1. *Preparing videos and transcripts:* For each video file (only `.mp4` supported), create a transcript with the same filename and save it as `.srt` (e.g., using [Mac Whisper](https://goodsnooze.gumroad.com/l/macwhisper)) in `backend/media/`.
 2. Start the backend server.
 3. Start the DB server (separate process).
 4. Start the WoZ frontend.
