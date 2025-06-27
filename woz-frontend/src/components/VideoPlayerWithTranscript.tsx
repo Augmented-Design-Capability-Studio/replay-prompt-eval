@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import SrtParser2 from 'srt-parser-2';
+
+
 
 interface Transcript {
   start: number;
@@ -11,29 +14,24 @@ interface VideoPlayerWithTranscriptProps {
   onTimeUpdate: (time: number) => void;
 }
 
-// Define the parseSRT function
+// Define the parseSRT function using srt-parser-2
 const parseSRT = (data: string): Transcript[] => {
-  const srtPattern = /(\d+)\n(\d{2}:\d{2}:\d{2},\d{3}) --> (\d{2}:\d{2}:\d{2},\d{3})\n([\s\S]*?)(?=\n\n|\n*$)/g;
-  const transcripts: Transcript[] = [];
-  let match;
-
-  while ((match = srtPattern.exec(data)) !== null) {
-    const start = convertTimecodeToSeconds(match[2]);
-    const text = match[4].replace(/\n/g, ' ');
-    transcripts.push({ start, text });
-  }
-
-  return transcripts;
+  const parser = new SrtParser2();
+  const parsed = parser.fromSrt(data);
+  return parsed.map((item: any) => ({
+    start: convertTimecodeToSeconds(item.startTime),
+    text: item.text.replace(/\n/g, ' '),
+  }));
 };
 
 // Helper function to convert SRT timecode to seconds
 const convertTimecodeToSeconds = (timecode: string): number => {
-  const [hours, minutes, seconds] = timecode.split(':');
-  const [secs, millis] = seconds.split(',');
+  const [hours, minutes, rest] = timecode.split(':');
+  const [seconds, millis] = rest.split(',');
   return (
     parseInt(hours, 10) * 3600 +
     parseInt(minutes, 10) * 60 +
-    parseInt(secs, 10) +
+    parseInt(seconds, 10) +
     parseInt(millis, 10) / 1000
   );
 };
