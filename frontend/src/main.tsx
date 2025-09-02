@@ -7,7 +7,7 @@ import CodingInterface from './components/CodingInterface.tsx' // Import the new
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router basename="/woz">
+    <Router basename="/"> {/* Set the basename to /woz */}
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/coding" element={<CodingInterface />} />

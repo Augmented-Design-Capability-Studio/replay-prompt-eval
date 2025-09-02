@@ -11,7 +11,7 @@ backend/         # Node.js/Express backend server and DB server
   server.js      # Main API server
   db-server.js   # JSON DB server
   media/         # Place your .mp4 and .srt files here
-woz-frontend/    # React + Vite frontend (WoZ interface)
+frontend/    # React + Vite frontend (Replay interface)
 ```
 
 ---
@@ -46,18 +46,18 @@ woz-frontend/    # React + Vite frontend (WoZ interface)
 
 ---
 
-## 3. WoZ Frontend (React App)
+## 3. Replay Frontend (React App)
 
 **Setup:**
   ```sh
-  cd woz-frontend
+  cd frontend
   npm install
   ```
 **Start:**
   ```sh
   npm run dev
   ```
-The app will be available at [http://localhost:5173/woz/](http://localhost:5173/woz/)
+The app will be available at [http://localhost:5173/](http://localhost:5173/)
 
 ---
 
@@ -66,7 +66,7 @@ The app will be available at [http://localhost:5173/woz/](http://localhost:5173/
 1. *Preparing videos and transcripts:* For each video file (only `.mp4` supported), create a transcript with the same filename and save it as `.srt` (e.g., using [Mac Whisper](https://goodsnooze.gumroad.com/l/macwhisper)) in `backend/media/`.
 2. Start the backend server.
 3. Start the DB server (separate process).
-4. Start the WoZ frontend.
+4. Start the frontend.
 
 
 

@@ -177,7 +177,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen p-4 bg-gray-200">
 
-      <div className='text-xl font-bold mb-2'>Replay Prompter | <a href="/woz/coding" className='text-gray-500 hover:underline'>Coder</a></div>
+      <div className='text-xl font-bold mb-2'>Replay Prompter | <a href="/coding" className='text-gray-500 hover:underline'>Coder</a></div>
 
       <div className='flex flex-row items-start gap-4 bg-gray-200'>
         <div className="">
