@@ -3,5 +3,7 @@
 
 .env
 
+db_test.json
+
 # Ignore all node_modules directories
 node_modules/

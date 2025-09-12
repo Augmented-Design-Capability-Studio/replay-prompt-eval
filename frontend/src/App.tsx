@@ -73,7 +73,7 @@ function App() {
       }
     }
     // console.log('Screenshot Base64:', screenshotBase64);
-    
+
     // get current content from textarea with id="transcript" from the VideoPlayerWithTranscript component
     const transcriptTextarea = document.getElementById('transcript') as HTMLTextAreaElement;
     const currentTranscript = transcriptTextarea ? transcriptTextarea.value : '';
@@ -170,7 +170,7 @@ function App() {
       localStorage.setItem('llmSystemPrompt', llmSystemPrompt);
     }
   }, [llmSystemPrompt]);
-  
+
 
 
 
@@ -206,10 +206,11 @@ function App() {
                   type="checkbox"
                   id="includePrevMessages"
                   checked={includePrevMessages}
+                  // checked={true}
                   onChange={e => setIncludePrevMessages(e.target.checked)}
                   className="mr-1"
                 />
-                <label htmlFor="includePrevMessages" className="label-text text-xs">Previous Agent Messages</label>
+                <label htmlFor="includePrevMessages" className="label-text text-xs disabled">Previous Agent Messages</label>
               </div>
             </div>
             <textarea
