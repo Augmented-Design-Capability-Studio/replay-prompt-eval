@@ -24,7 +24,7 @@ function App() {
   const [msgRatingComment, setMsgRatingComment] = useState<string>('');
   const [llmSystemPrompt, setLlmSystemPrompt] = useState<string>(DEFAULT_PROMPT);
   const [currentVideoTime, setCurrentVideoTime] = useState<number>(0);
-  const [includePrevMessages, setIncludePrevMessages] = useState<boolean>(true);
+  const [includePrevMessages, setIncludePrevMessages] = useState<boolean>(false);
 
 
   useEffect(() => {
@@ -205,12 +205,12 @@ function App() {
                 <input
                   type="checkbox"
                   id="includePrevMessages"
-                  checked={includePrevMessages}
-                  // checked={true}
+                  // checked={includePrevMessages}
+                  checked={false} // DISABLED FOR DEMO
                   onChange={e => setIncludePrevMessages(e.target.checked)}
                   className="mr-1"
                 />
-                <label htmlFor="includePrevMessages" className="label-text text-xs disabled">Previous Agent Messages</label>
+                <label htmlFor="includePrevMessages" className="label-text text-xs disabled">Previous Agent Messages <i>(disabled in demo)</i></label>
               </div>
             </div>
             <textarea
@@ -284,7 +284,7 @@ function App() {
                     className="flex flex-col btn btn-outline btn-xs btn-primary mt-2"
                     onClick={() => sendMessageFeedback()}
                   >
-                    Save Response Rating
+                    Save Response Rating <i>(disabled in demo)</i>
                   </button>
                   <button
                     className="flex flex-col btn btn-xs btn-outline btn-gray-200 mt-2"
