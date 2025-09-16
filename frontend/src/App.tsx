@@ -228,7 +228,7 @@ function App() {
           <div className="">
             <button
               className="btn btn-primary btn-outline m-4 w-48 flex flex-col"
-              disabled={isLoading}
+              disabled={isLoading || currentVideoTime === 0}
               onClick={requestNewMessage}
             >
               Request LLM Response for Sec {maxTimestamp}
