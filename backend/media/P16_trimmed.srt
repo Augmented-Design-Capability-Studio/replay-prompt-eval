@@ -1,456 +1,204 @@
 1
-00:00:00,001 --> 00:00:02,000
-Here.
+00:00:00,001 --> 00:00:06,000
+And we open up the generative design study and we create a structural component.
 
 2
-00:00:02,000 --> 00:00:06,040
-And then finally we have
+00:00:06,000 --> 00:00:13,380
+If we say that we need to preserve, well it's a good thing to set this up anyway
 
 3
-00:00:06,040 --> 00:00:11,800
-that connection to the damper.
+00:00:13,380 --> 00:00:21,320
+because we're gonna have to do this. We'll preserve all of these and then if
 
 4
-00:00:11,800 --> 00:00:18,840
-Somewhere around here. Doesn't need to be drawn to scale or anything like that.
+00:00:21,320 --> 00:00:29,960
+we tell it that we need to design structural constraints and we're gonna
 
 5
-00:00:18,840 --> 00:00:22,300
-Just trying to get a general sense as to where to apply the loading conditions.
+00:00:29,960 --> 00:00:34,440
+say that let's so let's see what happens if we say that all of these are fixed.
 
 6
-00:00:22,300 --> 00:00:23,300
-So,
+00:00:34,440 --> 00:00:39,960
+Oh right it's faces that I'm selecting okay let me think about that then. Well
 
 7
-00:00:23,300 --> 00:00:27,640
-essentially we have
+00:00:39,960 --> 00:00:45,160
+so the ones that we need to design as fixed then are going to be this face
 
 8
-00:00:28,240 --> 00:00:30,240
-the engine
+00:00:45,160 --> 00:00:57,480
+here, this face here, this face here. I guess we can leave this one floating.
 
 9
-00:00:30,240 --> 00:00:33,940
-kind of off over here.
+00:00:57,480 --> 00:01:07,560
+I mean I'll see if I if I design this one as fixed as well. What will happen?
 
 10
-00:00:33,940 --> 00:00:36,340
-Right.
+00:01:07,560 --> 00:01:13,720
+Okay so we've got those fixed we're not gonna assign any obstacle geometry for a
 
 11
-00:00:36,340 --> 00:00:43,040
-And so the engine weight is just, you know, if we just modeled it as a point mass, it's just
+00:01:13,720 --> 00:01:19,520
+second. We can set the objectives that we're trying to minimize mass. We'll set
 
 12
-00:00:43,040 --> 00:00:46,440
-going like that right now.
+00:01:19,520 --> 00:01:28,280
+the factor of safety of two for now. And then I don't I don't know if I need to
 
 13
-00:00:46,440 --> 00:00:51,340
-And so the reactions we'd expect are
+00:01:28,280 --> 00:01:34,000
+set manufacturing or materials to do that sort of previewer but I'll just do
 
 14
-00:00:51,340 --> 00:00:53,340
-that we're getting
+00:01:34,000 --> 00:01:38,360
+it just to be safe. Let's say we're doing additive and milling and not
 
 15
-00:00:55,640 --> 00:00:58,640
-in our system, we'd expect that there'd be
+00:01:38,360 --> 00:01:47,560
+unrestricted okay and we have materials let's just put it in one material for
 
 16
-00:00:58,640 --> 00:01:01,440
-probably
+00:01:47,560 --> 00:01:54,560
+now just so that we have it we'll put in just a like an aluminum close that up
 
 17
-00:01:01,440 --> 00:01:05,440
-forces being applied here.
+00:01:54,560 --> 00:02:02,160
+okay so we've set the preserve geometry we didn't set any obstacle geometry our
 
 18
-00:01:05,440 --> 00:01:09,140
-Forces being applied on the second one.
+00:02:02,160 --> 00:02:08,520
+objectives your manufacturing we have that we didn't add loads let's add in
 
 19
-00:01:09,140 --> 00:01:12,140
-And force being applied here.
+00:02:08,520 --> 00:02:19,120
+some loads just for fun let's say that on this face on this face and on this
 
 20
-00:01:12,140 --> 00:01:16,140
-And one force being applied here.
+00:02:19,120 --> 00:02:24,240
+face and on
 
 21
-00:01:23,240 --> 00:01:26,840
-Because that needs to be sitting on the damper, so there's going to be some amount of force
+00:02:25,800 --> 00:02:33,600
+I guess we can select the top face here and let's say that let's say they're
 
 22
-00:01:26,840 --> 00:01:30,340
-that is, that it's going to carry there. So,
+00:02:33,600 --> 00:02:37,480
+just splitting the load evenly for right now even though that's probably not what
 
 23
-00:01:30,340 --> 00:01:33,940
-we can start with four forces. I wonder,
+00:02:37,480 --> 00:02:44,880
+is happening so 1250 kilograms so I should be able to do that math but I'm
 
 24
-00:01:33,940 --> 00:01:36,140
-I mean, so if we have four forces,
+00:02:44,880 --> 00:02:48,680
+just gonna pull the calculator to make my life easier
 
 25
-00:01:36,140 --> 00:01:39,640
-we're not going to have, we should be fine
+00:02:48,680 --> 00:02:57,640
+I mean okay divided by four all right 3062.5 Newton's okay
 
 26
-00:01:39,640 --> 00:01:45,840
-from a condition, like a boundary condition sort of
+00:02:57,640 --> 00:03:08,440
+all right okay so theoretically the pre check says that's all good cool okay
 
 27
-00:01:45,840 --> 00:01:51,640
-perspective. It should be solvable because we'll have the moment equations
+00:03:08,440 --> 00:03:12,360
+we're not gonna generate we're just gonna go to the previewer we'll see what
 
 28
-00:01:51,640 --> 00:01:55,040
-theoretically to help us solve out like what's going on
+00:03:12,360 --> 00:03:20,240
+happens now when we have basically the preserves geometry and the fixed and the
 
 29
-00:01:55,040 --> 00:01:58,540
-everywhere so we could work out what,
+00:03:20,240 --> 00:03:24,320
+loads set where they are right now
 
 30
-00:01:58,540 --> 00:02:02,740
-you know, what force is going to be applied everywhere, but it should also be
+00:03:37,720 --> 00:03:45,240
+interesting so it looks like it is building material
 
 31
-00:02:02,740 --> 00:02:08,240
-something that we can design actually for and figure out, you know, maybe we,
+00:03:45,240 --> 00:03:50,680
+it's gonna build it looks like it's building some material underneath so we
 
 32
-00:02:08,240 --> 00:02:12,940
-maybe with this free body diagram, what we want to do right is we want to figure out
+00:03:50,680 --> 00:03:56,000
+might want to make a body underneath this to just specify hey don't like
 
 33
-00:02:12,940 --> 00:02:19,940
-what forces are being applied where, what moments are being applied and stuff like that and then apply
+00:03:56,000 --> 00:04:03,960
+build in this space in fact is it actually interesting is it building
 
 34
-00:02:20,540 --> 00:02:26,340
-that using the knowledge we can gain from the free body diagram. So,
+00:04:03,960 --> 00:04:10,440
+inside of this as well it is okay so we're gonna have to specify some things
 
 35
-00:02:26,340 --> 00:02:27,740
-let's maybe...
+00:04:10,440 --> 00:04:17,000
+inside of these you know when you have a moment okay give me one second I'm just
 
 36
-00:02:27,740 --> 00:02:33,140
-I want to ask you a couple of questions that might help you think through the design task.
+00:04:17,000 --> 00:04:20,680
+still kind of observing the preview
 
 37
-00:02:33,140 --> 00:02:34,840
-Go for it.
+00:04:20,680 --> 00:04:28,080
+yeah okay so we're gonna have to add in some extra body is just to specify some
 
 38
-00:02:34,840 --> 00:02:39,040
-What are your assumptions for the structural constraints?
+00:04:28,080 --> 00:04:34,920
+obstacles but the rest of it looks fine from a previous standpoint so I'm not
 
 39
-00:02:39,040 --> 00:02:43,840
-My assumptions for the structural constraints are that
+00:04:34,920 --> 00:04:41,640
+super concerned about that yet okay I am free what did you want to ask me about
 
 40
-00:02:43,840 --> 00:02:46,340
-we are going to have
+00:04:41,640 --> 00:04:46,800
+what are your assumptions for the obstacle geometry my assumptions for the
 
 41
-00:02:46,340 --> 00:02:53,440
-assumptions for the constructional constraints.
+00:04:46,800 --> 00:04:51,640
+obstacle geometry are that I need to the only things I care about are preserving
 
 42
-00:02:53,440 --> 00:03:05,940
-Can you define what you mean by constructional constraints?
+00:04:51,640 --> 00:04:57,920
+the connections at the bra at the of the bracket so the connection at the damper
 
 43
-00:03:05,940 --> 00:03:09,740
-Give me a second.
+00:04:57,920 --> 00:05:04,520
+the connection at the engine connectors those need to be free of material
 
 44
-00:03:09,740 --> 00:03:17,740
-While that's going I'll just think a bit more about this.
+00:05:04,520 --> 00:05:10,080
+essentially we don't want material to generate inside of those because then we
 
 45
-00:03:17,740 --> 00:03:22,040
-Constructional constraints.
+00:05:10,080 --> 00:05:16,720
+won't be able to place our connectors and our bolts inside so that is my main
 
 46
-00:03:22,040 --> 00:03:25,040
-Mm-hmm.
+00:05:16,720 --> 00:05:22,600
+assumption and then as we sort of regenerate previews we can see if
 
 47
-00:03:25,040 --> 00:03:33,040
-Apply those forces there.
+00:05:22,600 --> 00:05:29,120
+there's other areas where maybe we need to remove we need to specify more bodies
 
 48
-00:03:33,040 --> 00:03:40,040
-We also have to think about what we're going to model.
+00:05:29,120 --> 00:05:33,360
+to remove material from or things like that
 
 49
-00:03:40,040 --> 00:03:43,040
-The solver requires structural loads and structural constraints.
+00:05:33,360 --> 00:05:48,160
+okay sounds good just off of that actually then what I'll do for now will
 
 50
-00:03:43,040 --> 00:03:46,040
-What are your assumptions for the structural constraints?
+00:05:48,160 --> 00:05:53,120
+look at least we've set up a preliminary study you know we can come back
 
 51
-00:03:46,040 --> 00:03:51,840
-Well, my assumptions right now for the structural constraints is that, you know,
-
-52
-00:03:51,840 --> 00:03:56,840
-in the most basic case, if I just wanted to get jump right into designing it, is that I would need to apply
-
-53
-00:03:56,840 --> 00:04:06,840
-forces on most of these structure, on basically all of the connection points, and then I would need to model
-
-54
-00:04:06,840 --> 00:04:16,840
-the bracket connections as fixed connections, and I would want to model the damper as
-
-55
-00:04:16,840 --> 00:04:19,840
-I guess it could technically...
-
-56
-00:04:19,840 --> 00:04:25,840
-I mean it's sitting on there, but it's also screwed in, so I would also model that as a fixed connection, I believe,
-
-57
-00:04:25,840 --> 00:04:34,840
-because it's this actual piece that's going to be kind of damping everything out and potentially moving,
-
-58
-00:04:34,840 --> 00:04:40,840
-and this shouldn't be moving, this connection shouldn't be moving, so I would model every connection as fixed.
-
-59
-00:04:40,840 --> 00:04:46,840
-So that's kind of the... those are the assumptions I'm running with currently.
-
-60
-00:04:46,840 --> 00:04:50,840
-What alternative assumptions might we make about the load case?
-
-61
-00:04:50,840 --> 00:04:58,840
-Alternative assumptions... well we might need to apply, depending on how I want to solve out this sort of free body diagram,
-
-62
-00:04:58,840 --> 00:05:07,840
-we might need to apply some moments or other loads that we might not be expecting.
-
-63
-00:05:07,840 --> 00:05:18,840
-You could, I guess, model the connection at the damper as potentially a pin so that it can slide,
-
-64
-00:05:18,840 --> 00:05:29,840
-but I... and then say that it's just not really carrying any force, but I don't think that would be accurate to the situation,
-
-65
-00:05:29,840 --> 00:05:38,840
-but we can see depending on how the design generates, if that is kind of a valid concern or not.
-
-66
-00:05:42,840 --> 00:05:49,840
-Okay, what will the solver when we specify all preserved bodies as fixed constraints?
-
-67
-00:05:49,840 --> 00:05:53,840
-What would... can you repeat the question?
-
-68
-00:05:53,840 --> 00:06:00,840
-Okay, what will the solver do when we specify all preserved bodies as fixed constraints?
-
-69
-00:06:00,840 --> 00:06:10,840
-All preserved bodies as fixed constraints... what would the solver do if we defined all of the bodies as fixed constraints?
-
-70
-00:06:10,840 --> 00:06:15,840
-That is a good question, I do not know.
-
-71
-00:06:15,840 --> 00:06:19,840
-I guess we can go and check and see really quickly.
-
-72
-00:06:19,840 --> 00:06:29,840
-So if we go into the software here and we open up the Generate Design Study and we create a structural component,
-
-73
-00:06:29,840 --> 00:06:38,840
-if we say that we need to preserve... well it's a good thing to set this up anyway because we're going to have to do this.
-
-74
-00:06:38,840 --> 00:06:52,840
-We'll preserve all of these and then if we tell it that we need to design structural constraints,
-
-75
-00:06:52,840 --> 00:06:57,840
-and we're going to say that... so let's see what happens if we say that all of these are fixed.
-
-76
-00:06:57,840 --> 00:07:02,840
-Oh right, it's faces that I'm selecting. Okay, let me think about that then.
-
-77
-00:07:02,840 --> 00:07:18,840
-Well, so the ones that we need to design as fixed then are going to be this face here, this face here, this face here...
-
-78
-00:07:18,840 --> 00:07:25,840
-I guess we can leave this one floating.
-
-79
-00:07:25,840 --> 00:07:32,840
-I mean, I'll see if I design this one as fixed as well.
-
-80
-00:07:32,840 --> 00:07:38,840
-So we've got those fixed, we're not going to assign any obstacle geometry for a second.
-
-81
-00:07:38,840 --> 00:07:48,840
-We can set the objectives that we're trying to minimize mass, we'll set a factor of safety of two for now.
-
-82
-00:07:48,840 --> 00:07:58,840
-And then I don't know if I need to set manufacturing or materials to do that sort of previewer, but I'll just do it just to be safe.
-
-83
-00:07:58,840 --> 00:08:04,840
-Let's say we're doing additive and milling, not unrestricted, okay.
-
-84
-00:08:04,840 --> 00:08:12,840
-And we have materials, let's just put in one material for now just so that we have it.
-
-85
-00:08:12,840 --> 00:08:19,840
-We'll put in just like an aluminum, close that up, okay.
-
-86
-00:08:19,840 --> 00:08:24,840
-So we've set the preserved geometry, we didn't set any obstacle geometry.
-
-87
-00:08:24,840 --> 00:08:28,840
-We have our objectives, we have manufacturing, we have...
-
-88
-00:08:28,840 --> 00:08:30,840
-Ah, we didn't add loads.
-
-89
-00:08:30,840 --> 00:08:34,840
-Let's add in some loads just for fun.
-
-90
-00:08:34,840 --> 00:08:50,840
-Let's say that on this face, on this face, and on this face, and on...
-
-91
-00:08:50,840 --> 00:08:53,840
-I guess we can select the top face here.
-
-92
-00:08:53,840 --> 00:08:56,840
-And let's say that...
-
-93
-00:08:56,840 --> 00:09:02,840
-Let's say they're just splitting the load evenly for right now, even though that's probably not what is happening.
-
-94
-00:09:02,840 --> 00:09:12,840
-So 1250 kilograms, so I should be able to do that math, but I'm just going to pull up a calculator to make my life easier.
-
-95
-00:09:12,840 --> 00:09:24,840
-E, K divided by 4, alright, 30,062.5 Newtons, okay.
-
-96
-00:09:24,840 --> 00:09:27,840
-Alright, okay.
-
-97
-00:09:27,840 --> 00:09:32,840
-So theoretically the pre-check says that's all good, cool, okay.
-
-98
-00:09:32,840 --> 00:09:35,840
-We're not going to generate, we're just going to go to the previewer.
-
-99
-00:09:35,840 --> 00:09:47,840
-We'll see what happens now when we have basically the preserved geometry and the fixed and the loads set where they are right now.
-
-100
-00:09:47,840 --> 00:10:02,840
-Interesting.
-
-101
-00:10:02,840 --> 00:10:10,840
-So it looks like it is building material...
-
-102
-00:10:10,840 --> 00:10:21,840
-It looks like it's building some material underneath, so we might want to make a body underneath this to just specify, hey, don't build in this space.
-
-103
-00:10:21,840 --> 00:10:30,840
-In fact, is it? Actually, interesting, is it building inside of this as well? It is.
-
-104
-00:10:30,840 --> 00:10:35,840
-Okay, so we're going to have to specify some things inside of these.
-
-105
-00:10:35,840 --> 00:10:38,840
-Hey, let me know when you have a moment.
-
-106
-00:10:38,840 --> 00:10:43,840
-Okay, give me one second, I'm just still kind of observing the preview.
-
-107
-00:10:43,840 --> 00:10:46,840
-Um...
-
-108
-00:10:46,840 --> 00:11:01,840
-Yeah, okay, so we're going to have to add in some extra bodies just to specify some obstacles, but the rest of it looks fine from a preview standpoint, so I'm not super concerned about that yet.
-
-109
-00:11:01,840 --> 00:11:09,840
-Okay, I am free, what did you want to ask me about?
-
-110
-00:11:09,840 --> 00:11:28,840
-My assumptions for the obstacle geometry are that I need to... the only things I care about are preserving the connections of the bracket, so the connection at the damper, the connection at the engine connectors, those need to be free of material, essentially.
-
-111
-00:11:28,840 --> 00:11:40,840
-We don't want material to generate inside of those, because then we won't be able to place our connectors, our bolts inside, so that is my main assumption.
-
-112
-00:11:40,840 --> 00:11:57,840
-And then as we sort of regenerate previews, we can see if there's other areas where maybe we need to remove... we need to specify more bodies to remove material from, or things like that.
-
-113
-00:11:57,840 --> 00:12:07,840
-Okay, sounds good.
-
-114
-00:12:07,840 --> 00:12:18,840
-Um, just off of that actually then, what I'll do for now, we'll... at least we've set up a preliminary study, you know, we can come back afterwards once we kind of see...
+00:05:53,120 --> 00:05:57,200
+afterwards once we kind of see
 
