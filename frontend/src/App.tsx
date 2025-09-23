@@ -284,7 +284,7 @@ function App() {
                     className="flex flex-col btn btn-outline btn-xs btn-primary mt-2"
                     onClick={() => sendMessageFeedback()}
                   >
-                    Save Response Rating <i>(disabled in demo)</i>
+                    <span>Save Response Rating <i>(disabled in demo)</i></span>
                   </button>
                   <button
                     className="flex flex-col btn btn-xs btn-outline btn-gray-200 mt-2"
