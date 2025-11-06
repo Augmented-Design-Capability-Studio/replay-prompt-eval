@@ -1,6 +1,13 @@
 # Counterfactual Replay Prompt Evaluation Toolkit
 
+This repository contains the open-source implementation accompanying the paper:
 
+> **Prototyping Multimodal GenAI Real-Time Agents with Counterfactual Replays and Hybrid Wizard-of-Oz**  
+> Frederic Gmeiner, Kenneth Holstein, and Nikolas Martelaro  
+> *Carnegie Mellon University*  
+> [arXiv:2510.06872](https://arxiv.org/html/2510.06872v1)
+
+If you use or build upon this work in academic projects, please cite the paper above.
 
 ---
 
